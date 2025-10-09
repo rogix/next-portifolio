@@ -1,13 +1,45 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    let ticking = false;
+    
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrollTop = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const progress = Math.min(scrollTop / docHeight, 1);
+          setScrollProgress(progress);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className="min-h-screen bg-[#0f0f0f] text-white">
       {/* Navigation Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#0f0f0f]">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
           <a href="#" className="text-lg font-medium whitespace-nowrap">rogix</a>
-          <div className="hidden md:block w-full h-px mx-10 bg-gray-600/30"></div>
+          <div 
+            className="hidden md:block w-full h-px mx-10 relative overflow-hidden rounded-full"
+            style={{ backgroundColor: `rgba(156, 163, 175, ${0.3 - scrollProgress * 0.2})` }}
+          >
+            <div 
+              className="absolute top-0 left-0 h-full bg-[#d3d3d3] transition-all duration-500 ease-out rounded-full"
+              style={{ width: `${scrollProgress * 100}%` }}
+            ></div>
+          </div>
           <nav className="flex space-x-6 md:space-x-12">
             <a
               href="#about"
