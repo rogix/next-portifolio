@@ -6,7 +6,7 @@ export default function Home() {
       {/* Navigation Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#0f0f0f]">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
-          <div className="text-lg font-medium whitespace-nowrap">Rogix</div>
+          <a href="#" className="text-lg font-medium whitespace-nowrap">rogix</a>
           <div className="hidden md:block w-full h-px mx-10 bg-gray-600/30"></div>
           <nav className="flex space-x-6 md:space-x-12">
             <a
@@ -36,7 +36,7 @@ export default function Home() {
         id="hero"
         className="pt-16 md:pt-20 pb-10 px-4 md:px-40 h-screen flex flex-col justify-between"
       >
-        <div className="h-[calc(100vh-100px)] flex flex-col justify-between">
+        <div className="h-[calc(100vh-200px)] md:h-[calc(100vh-100px)] flex flex-col justify-between">
           {/* Profile and intro section */}
           <div className="flex items-start space-x-4 md:space-x-8 mt-6 md:mt-10">
             <Image
@@ -101,10 +101,10 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/rogmxp/"
                   className="flex items-center space-x-2 text-white hover:text-gray-300 transition-colors"
                 >
-                  <span className="text-sm md:text-base">BOOK A CALL</span>
+                  <span className="text-sm md:text-base">LINKEDIN</span>
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -120,10 +120,10 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/rogix"
                   className="flex items-center space-x-2 text-white hover:text-gray-300 transition-colors"
                 >
-                  <span className="text-sm md:text-base">X</span>
+                  <span className="text-sm md:text-base">GITHUB</span>
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -141,13 +141,13 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center mt-8 lg:mt-0">
-              <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden">
+              <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border border-[#00e0b7]/5">
                 {/* Subtle background particles */}
                 <div className="absolute inset-0">
                   {[...Array(8)].map((_, i) => (
                     <div
                       key={i}
-                      className="absolute w-0.5 h-0.5 bg-[#00e0b7] rounded-full opacity-20 animate-float-subtle"
+                      className="absolute w-0.5 h-0.5 bg-[#00e0b7] rounded-full  opacity-20 animate-float-subtle"
                       style={{
                         left: `${Math.random() * 100}%`,
                         top: `${Math.random() * 100}%`,
@@ -160,15 +160,15 @@ export default function Home() {
                 
                 {/* Minimal geometric accents */}
                 <div className="absolute inset-0">
-                  <div className="absolute top-8 left-8 md:top-12 md:left-12 w-8 h-8 md:w-12 md:h-12 border border-[#00e0b7]/15 rounded-lg animate-pulse-very-slow"></div>
-                  <div className="absolute bottom-10 right-10 md:bottom-16 md:right-16 w-6 h-6 md:w-8 md:h-8 border border-[#00e0b7]/10 rounded-full animate-pulse-very-slow"></div>
+                  <div className="absolute top-8 left-8 md:top-12 md:left-12 w-8 h-8 md:w-12 md:h-12 border border-[#00e0b7]/35 rounded-lg animate-pulse-very-slow"></div>
+                  <div className="absolute bottom-10 right-10 md:bottom-16 md:right-16 w-6 h-6 md:w-8 md:h-8 border border-[#00e0b7]/30 rounded-full animate-pulse-very-slow"></div>
                 </div>
                 
                 {/* Subtle central element */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative">
-                    <div className="w-12 h-12 md:w-16 md:h-16 border border-[#00e0b7]/20 rounded-full animate-pulse-very-slow"></div>
-                    <div className="absolute inset-2 w-8 h-8 md:w-12 md:h-12 bg-gradient-to-r from-[#00e0b7]/5 to-transparent rounded-full"></div>
+                    <div className="w-12 h-12 md:w-16 md:h-16 border border-[#00e0b7]/40 rounded-full animate-pulse-very-slow"></div>
+                    <div className="absolute inset-2 w-8 h-8 md:w-12 md:h-12 bg-gradient-to-r from-[#00e0b7]/25 to-transparent rounded-full"></div>
                   </div>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/rogmxp/"
                 className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors w-fit"
               >
                 <span className="text-sm md:text-base">Connect with Linkedin</span>
