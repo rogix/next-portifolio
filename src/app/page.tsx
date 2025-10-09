@@ -195,7 +195,8 @@ export default function Home() {
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-16 items-start">
             <div className="flex flex-col space-y-4 h-full justify-end mb-8 lg:mb-0">
               <a
-                href="#"
+                href="/rogerio-resume.pdf"
+                target="_blank"
                 className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors w-fit"
               >
                 <span className="text-sm md:text-base">Download CV</span>
