@@ -5,25 +5,25 @@ export default function Home() {
     <div className="min-h-screen bg-[#0f0f0f] text-white">
       {/* Navigation Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#0f0f0f]">
-        <div className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
           <div className="text-lg font-medium whitespace-nowrap">Rogix</div>
-          <div className="w-full h-px mx-10 bg-gray-600/30"></div>
-          <nav className="flex space-x-12">
+          <div className="hidden md:block w-full h-px mx-10 bg-gray-600/30"></div>
+          <nav className="flex space-x-6 md:space-x-12">
             <a
               href="#about"
-              className="text-sm hover:text-gray-300 transition-colors"
+              className="text-xs md:text-sm hover:text-gray-300 transition-colors"
             >
               About
             </a>
             <a
               href="#experience"
-              className="text-sm hover:text-gray-300 transition-colors"
+              className="text-xs md:text-sm hover:text-gray-300 transition-colors"
             >
               Experience
             </a>
             <a
               href="#contact"
-              className="text-sm hover:text-gray-300 transition-colors"
+              className="text-xs md:text-sm hover:text-gray-300 transition-colors"
             >
               Contact
             </a>
@@ -34,19 +34,19 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="pt-20 pb-10 px-40 h-screen flex flex-col justify-between"
+        className="pt-16 md:pt-20 pb-10 px-4 md:px-40 h-screen flex flex-col justify-between"
       >
         <div className="h-[calc(100vh-100px)] flex flex-col justify-between">
           {/* Profile and intro section */}
-          <div className="flex items-start space-x-8 mt-10">
+          <div className="flex items-start space-x-4 md:space-x-8 mt-6 md:mt-10">
             <Image
               src="/profile.jpeg"
               alt="Profile"
-              width={80}
-              height={80}
-              className="rounded-full object-cover aspect-square"
+              width={60}
+              height={60}
+              className="md:w-20 md:h-20 rounded-full object-cover aspect-square"
             />
-            <div className="text-gray-400 text-sm leading-relaxed pt-1 max-w-md">
+            <div className="text-gray-400 text-xs md:text-sm leading-relaxed pt-1 max-w-md">
               I build high-quality products
               <br />
               and user-friendly interfaces
@@ -56,12 +56,12 @@ export default function Home() {
           </div>
 
           {/* Main headline */}
-          <div className="mb-20">
-            <h1 className="text-7xl lg:text-8xl font-bold leading-[0.9] mb-4">
+          <div className="mb-10 md:mb-20">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] mb-4">
               Software Engineer
             </h1>
-            <h2 className="text-7xl lg:text-8xl font-bold leading-[0.9]">
-              <span className="text-gray-400 text-5xl lg:text-8xl font-normal">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9]">
+              <span className="text-gray-400 text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-normal">
                 and
               </span>{" "}
               Other Things
@@ -69,19 +69,19 @@ export default function Home() {
           </div>
         </div>
         {/* Location and availability */}
-        <div className="flex justify-between items-center">
-          <div className="text-gray-400 text-sm whitespace-nowrap">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+          <div className="text-gray-400 text-xs md:text-sm whitespace-nowrap">
             São Paulo, BR
           </div>
-          <div className="w-[60%] h-px mx-10 bg-gray-600/30"></div>
-          <div className="text-right">
-            <div className="flex items-center justify-end space-x-2">
-              <span className="text-sm whitespace-nowrap">UTC-3 (BRT)</span>
+          <div className="hidden md:block w-[60%] h-px mx-10 bg-gray-600/30"></div>
+          <div className="text-left md:text-right">
+            <div className="flex items-center space-x-2">
+              <span className="text-xs md:text-sm whitespace-nowrap">UTC-3 (BRT)</span>
             </div>
           </div>
-          <div className="w-[60%] h-px mx-10 bg-gray-600/30"></div>
-          <div className="text-right text-[#00e0b7] whitespace-nowrap">
-            <a href="https://blog.rogix.dev" className="hover:text-gray-300 transition-colors">
+          <div className="hidden md:block w-[60%] h-px mx-10 bg-gray-600/30"></div>
+          <div className="text-left md:text-right text-[#00e0b7] whitespace-nowrap">
+            <a href="https://blog.rogix.dev" className="hover:text-gray-300 transition-colors text-xs md:text-sm">
               BLOG
             </a>
           </div>
@@ -89,22 +89,22 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-6 h-screen max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="h-screen flex flex-col justify-between pt-10 pb-20">
-              <p className="text-3xl leading-relaxed">
-                I've been working in the software industry for the past 8 years.
+      <section id="about" className="py-8 md:py-16 px-4 md:px-6 min-h-screen max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="min-h-screen flex flex-col justify-between pt-6 md:pt-10 pb-10 md:pb-20">
+              <p className="text-lg md:text-3xl leading-relaxed">
+                I&apos;ve been working in the software industry for the past 8 years.
                 My main focus is building high-quality software and
-                user-friendly interfaces. I'm also interested in building
-                products that help people live better lives. I'm currently
+                user-friendly interfaces. I&apos;m also interested in building
+                products that help people live better lives. I&apos;m currently
                 working at GFT Technology as a Frontend Developer.
               </p>
-              <div className="flex space-x-6">
+              <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
                 <a
                   href="#"
                   className="flex items-center space-x-2 text-white hover:text-gray-300 transition-colors"
                 >
-                  <span>BOOK A CALL</span>
+                  <span className="text-sm md:text-base">BOOK A CALL</span>
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -123,7 +123,7 @@ export default function Home() {
                   href="#"
                   className="flex items-center space-x-2 text-white hover:text-gray-300 transition-colors"
                 >
-                  <span>X</span>
+                  <span className="text-sm md:text-base">X</span>
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -140,8 +140,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="flex justify-center">
-              <div className="relative w-96 h-96 rounded-full overflow-hidden">
+            <div className="flex justify-center mt-8 lg:mt-0">
+              <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden">
                 {/* Subtle background particles */}
                 <div className="absolute inset-0">
                   {[...Array(8)].map((_, i) => (
@@ -160,15 +160,15 @@ export default function Home() {
                 
                 {/* Minimal geometric accents */}
                 <div className="absolute inset-0">
-                  <div className="absolute top-12 left-12 w-12 h-12 border border-[#00e0b7]/15 rounded-lg animate-pulse-very-slow"></div>
-                  <div className="absolute bottom-16 right-16 w-8 h-8 border border-[#00e0b7]/10 rounded-full animate-pulse-very-slow"></div>
+                  <div className="absolute top-8 left-8 md:top-12 md:left-12 w-8 h-8 md:w-12 md:h-12 border border-[#00e0b7]/15 rounded-lg animate-pulse-very-slow"></div>
+                  <div className="absolute bottom-10 right-10 md:bottom-16 md:right-16 w-6 h-6 md:w-8 md:h-8 border border-[#00e0b7]/10 rounded-full animate-pulse-very-slow"></div>
                 </div>
                 
                 {/* Subtle central element */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative">
-                    <div className="w-16 h-16 border border-[#00e0b7]/20 rounded-full animate-pulse-very-slow"></div>
-                    <div className="absolute inset-2 w-12 h-12 bg-gradient-to-r from-[#00e0b7]/5 to-transparent rounded-full"></div>
+                    <div className="w-12 h-12 md:w-16 md:h-16 border border-[#00e0b7]/20 rounded-full animate-pulse-very-slow"></div>
+                    <div className="absolute inset-2 w-8 h-8 md:w-12 md:h-12 bg-gradient-to-r from-[#00e0b7]/5 to-transparent rounded-full"></div>
                   </div>
                 </div>
               </div>
@@ -177,12 +177,12 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-20 bg-[#0f0f0f]">
+      <section id="experience" className="py-10 md:py-20 bg-[#0f0f0f] px-4 md:px-0">
         <div className="max-w-7xl mx-auto">
           {/* Left side - Introductory text and CTA links */}
           {/* Main headline */}
-          <div className="max-w-3xl mb-12">
-            <p className="text-gray-400 text-5xl leading-normal font-bold">
+          <div className="max-w-3xl mb-8 md:mb-12">
+            <p className="text-gray-400 text-2xl md:text-5xl leading-normal font-bold">
               I have{" "}
               <span className="text-white font-bold">
                 8 years of experience
@@ -192,13 +192,13 @@ export default function Home() {
           </div>
 
           {/* CTA Links */}
-          <section className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
-            <div className="flex flex-col space-y-4 h-full justify-end">
+          <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-16 items-start">
+            <div className="flex flex-col space-y-4 h-full justify-end mb-8 lg:mb-0">
               <a
                 href="#"
                 className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors w-fit"
               >
-                <span>Download CV</span>
+                <span className="text-sm md:text-base">Download CV</span>
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -217,7 +217,7 @@ export default function Home() {
                 href="#"
                 className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors w-fit"
               >
-                <span>Connect with Linkedin</span>
+                <span className="text-sm md:text-base">Connect with Linkedin</span>
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -235,7 +235,7 @@ export default function Home() {
             </div>
 
             {/* Right side - Experience list */}
-            <div className="space-y-8 col-span-2">
+            <div className="space-y-6 md:space-y-8 col-span-1 lg:col-span-2">
               {[
                 {
                   company: "GFT Technology",
@@ -261,15 +261,15 @@ export default function Home() {
               ].map((exp, index) => (
                 <div
                   key={index}
-                  className="grid grid-cols-3 py-6 border-b border-gray-700 last:border-b space-y-4 first:border-t"
+                  className="grid grid-cols-1 md:grid-cols-3 py-4 md:py-6 border-b border-gray-700 last:border-b space-y-2 md:space-y-0 first:border-t"
                 >
-                  <div className="text-white font-bold text-lg">
+                  <div className="text-white font-bold text-base md:text-lg">
                     {exp.company}
                   </div>
-                  <div className="text-gray-400 text-lg text-left">
+                  <div className="text-gray-400 text-sm md:text-lg">
                     {exp.role}
                   </div>
-                  <div className="text-gray-400 text-lg text-right">
+                  <div className="text-gray-400 text-sm md:text-lg md:text-right">
                     {exp.dates}
                   </div>
                 </div>
@@ -282,31 +282,31 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="py-16 px-6 h-screen flex flex-col justify-between max-w-7xl mx-auto pt-24"
+        className="py-8 md:py-16 px-4 md:px-6 min-h-screen flex flex-col justify-between max-w-7xl mx-auto pt-16 md:pt-24"
       >
-        <h2 className="text-8xl font-bold mb-6">
-          <span className="text-gray-400">Let's</span> Connect
+        <h2 className="text-4xl md:text-8xl font-bold mb-4 md:mb-6">
+          <span className="text-gray-400">Let&apos;s</span> Connect
         </h2>
 
         <section className="w-full">
-          <p className="text-gray-400 text-lg mb-5 max-w-2xl">
+          <p className="text-gray-400 text-base md:text-lg mb-5 max-w-2xl">
             Feel free to contact me if having any questions.
             <br />
-            I'm available for new projects or just for chatting.
+            I&apos;m available for new projects or just for chatting.
           </p>
 
-          <div className="flex flex-col sm:flex-row mb-16 w-full">
-            <button className="flex-1 px-20 py-10 bg-[#2a2a2a] text-white hover:text-amber-100 transition-colors w-full">
+          <div className="flex flex-col sm:flex-row mb-8 md:mb-16 w-full space-y-4 sm:space-y-0 sm:space-x-0">
+            <button className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#2a2a2a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-base">
               Linkedin
             </button>
-            <button className="flex-1 px-20 py-10 bg-[#3a3a3a] text-white hover:text-amber-100 transition-colors w-full">
+            <button className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#3a3a3a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-base">
               Send an Email
             </button>
-            <button className="flex-1 px-20 py-10 bg-[#4a4a4a] text-white hover:text-amber-100 transition-colors w-full">
+            <button className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#4a4a4a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-base">
               Follow on X
             </button>
           </div>
-          <div className="flex justify-between items-center text-gray-400 text-sm">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-gray-400 text-xs md:text-sm space-y-4 sm:space-y-0">
             <div>Rogix, 2025</div>
             <div className="flex space-x-4">
               <a
