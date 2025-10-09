@@ -296,18 +296,18 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row mb-8 md:mb-16 w-full space-y-4 sm:space-y-0 sm:space-x-0">
-            <button className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#2a2a2a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-base">
+            <a href="https://www.linkedin.com/in/rogmxp/" className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#2e2d2d] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-center">
               Linkedin
-            </button>
-            <button className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#3a3a3a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-base">
+            </a>
+            <a href="https://github.com/rogix" className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#2a2a2a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-center">
+              Github
+            </a>
+            <button className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#3a3a3a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-center">
               Send an Email
-            </button>
-            <button className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#4a4a4a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-base">
-              Follow on X
             </button>
           </div>
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-gray-400 text-xs md:text-sm space-y-4 sm:space-y-0">
-            <div>Rogix, 2025</div>
+            <div>rogix, 2025</div>
             <div className="flex space-x-4">
               <a
                 href="https://x.com/_rogmx"
@@ -319,7 +319,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/rogmxp/"
                 className="hover:text-white transition-colors"
               >
-                in
+                linkedin
               </a>
               <a
                 href="https://github.com/rogix"
