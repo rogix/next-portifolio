@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0f0f0f] text-white">
       {/* Navigation Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#0f0f0f]">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[#0f0f0f]/50 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 py-4 md:py-6 flex justify-between items-center">
           <a href="#" className="text-lg font-medium whitespace-nowrap">rogix</a>
           <div 
             className="hidden md:block w-full h-px mx-10 relative overflow-hidden rounded-full"
@@ -66,7 +66,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="pt-16 md:pt-20 pb-10 px-4 md:px-40 h-screen flex flex-col justify-between"
+        className="pt-16 md:pt-20 pb-10 px-4 max-w-7xl mx-auto h-screen flex flex-col justify-between"
       >
         <div className="h-[calc(100vh-200px)] md:h-[calc(100vh-100px)] flex flex-col justify-between">
           {/* Profile and intro section */}
@@ -96,7 +96,7 @@ export default function Home() {
               <span className="text-gray-400 text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-normal">
                 and
               </span>{" "}
-              Other Things
+              Product <span className="relative inline-block">Designer<div className="absolute top-12 -left-2 -right-2 h-1 bg-white transform -translate-y-1/2"></div></span>
             </h2>
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-8 md:py-16 px-4 md:px-6 min-h-screen max-w-7xl mx-auto">
+      <section id="about" className="py-8 md:py-16 px-4 min-h-screen max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="min-h-screen flex flex-col justify-between pt-6 md:pt-10 pb-10 md:pb-20">
               <p className="text-lg md:text-3xl leading-relaxed">
@@ -209,8 +209,7 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-10 md:py-20 bg-[#0f0f0f] px-4 md:px-0">
-        <div className="max-w-7xl mx-auto">
+      <section id="experience" className="py-10 md:py-20 bg-[#0f0f0f] max-w-7xl mx-auto px-4">
           {/* Left side - Introductory text and CTA links */}
           {/* Main headline */}
           <div className="max-w-3xl mb-8 md:mb-12">
@@ -309,7 +308,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-        </div>
       </section>
 
       {/* Contact Section */}
