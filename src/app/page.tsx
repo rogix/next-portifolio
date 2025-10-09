@@ -81,7 +81,7 @@ export default function Home() {
           </div>
           <div className="hidden md:block w-[60%] h-px mx-10 bg-gray-600/30"></div>
           <div className="text-left md:text-right text-[#00e0b7] whitespace-nowrap">
-            <a href="https://blog.rogix.dev" className="hover:text-gray-300 transition-colors text-xs md:text-sm">
+            <a href="https://blog.rogix.dev" target="_blank" className="hover:text-gray-300 transition-colors text-xs md:text-sm">
               BLOG
             </a>
           </div>
