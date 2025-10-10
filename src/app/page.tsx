@@ -101,7 +101,7 @@ export default function Home() {
           </div>
         </div>
         {/* Location and availability */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+        <div className="flex justify-between items-start md:items-center space-y-4 md:space-y-0">
           <div className="text-gray-400 text-xs md:text-sm whitespace-nowrap">
             São Paulo, BR
           </div>
@@ -113,8 +113,22 @@ export default function Home() {
           </div>
           <div className="hidden md:block w-[60%] h-px mx-10 bg-gray-600/30"></div>
           <div className="text-left md:text-right text-[#00e0b7] whitespace-nowrap">
-            <a href="https://blog.rogix.dev" target="_blank" className="hover:text-gray-300 transition-colors text-xs md:text-sm">
-              BLOG
+            <a href="https://blog.rogix.dev" target="_blank" className="hover:text-emerald-500 transition-colors text-xs md:text-sm flex items-center space-x-2">
+              <div className="w-2 h-2 bg-[#00e0b7] rounded-full animate-pulse"></div>
+              <span className="text-sm md:text-base">BLOG</span>
+              <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
             </a>
           </div>
         </div>
