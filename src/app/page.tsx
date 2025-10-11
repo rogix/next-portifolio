@@ -86,11 +86,9 @@ export default function Home() {
               className="md:w-20 md:h-20 rounded-full object-cover aspect-square"
             />
             <div className="text-gray-400 text-xs md:text-sm leading-relaxed pt-1 max-w-md">
-              I build high-quality products
+              &ldquo;There&apos;s a tremendous amount of craftsmanship between a great idea and a great product… and it&apos;s that process that is the magic.&rdquo;
               <br />
-              and user-friendly interfaces
-              <br />
-              with a focus on user experience
+              Steve Jobs
             </div>
           </div>
 
