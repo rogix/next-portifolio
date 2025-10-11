@@ -252,9 +252,9 @@ export default function Home() {
         {/* Main headline */}
         <div className="max-w-3xl mb-8 md:mb-12 hidden md:block">
           <p className="text-gray-400 text-2xl md:text-5xl leading-normal font-bold">
-            For the last {" "}
-            <span className="text-white font-bold">8 years</span>{" "}
-            I have worked on a variety of projects, from small startups to large enterprises.
+            For the last <span className="text-white font-bold">8 years</span> I
+            have worked on a variety of projects, from small startups to large
+            enterprises.
           </p>
         </div>
 
@@ -332,7 +332,11 @@ export default function Home() {
                 dates: "2019 → 2021",
               },
               { company: "IBGE", role: "Developer", dates: "2017 → 2019" },
-              { company: "Freelancer", role: "Developer", dates: "2016 → 2017" },
+              {
+                company: "Freelancer",
+                role: "Developer",
+                dates: "2016 → 2017",
+              },
             ].map((exp, index) => (
               <div
                 key={index}
@@ -382,30 +386,65 @@ export default function Home() {
             >
               Github
             </a>
-            <button className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#3a3a3a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-center">
-              Send an Email
-            </button>
+            <a
+              href="/rogerio-resume.pdf"
+              target="_blank"
+              className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#3a3a3a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-center items-center justify-center"
+            >
+              <div className="flex items-center justify-center">
+                <span className="text-sm md:text-base mr-2">Download CV</span>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+              </div>
+            </a>
           </div>
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-gray-400 text-xs md:text-sm space-y-4 sm:space-y-0">
             <div>rogix, 2025</div>
             <div className="flex space-x-4">
               <a
-                href="https://x.com/_rogmx"
-                className="hover:text-white transition-colors"
-              >
-                X
-              </a>
-              <a
                 href="https://www.linkedin.com/in/rogmxp/"
+                target="_blank"
                 className="hover:text-white transition-colors"
               >
                 linkedin
               </a>
               <a
                 href="https://github.com/rogix"
+                target="_blank"
                 className="hover:text-white transition-colors"
               >
                 github
+              </a>
+              <a
+                href="https://blog.rogix.dev"
+                className="hover:text-white transition-colors"
+              >
+                blog
+              </a>
+              <a
+                href="https://x.com/_rogmx"
+                target="_blank"
+                className="hover:text-white transition-colors"
+              >
+                X
+              </a>
+              <a
+                href="https://bsky.app/profile/rogix.bsky.social"
+                target="_blank"
+                className="hover:text-white transition-colors"
+              >
+                bluesky
               </a>
             </div>
           </div>
