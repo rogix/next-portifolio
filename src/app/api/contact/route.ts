@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>', // You'll need to verify your domain
+      from: 'rogix.dev <onboarding@resend.dev>', // You'll need to verify your domain
       to: [process.env.CONTACT_EMAIL || 'your-email@example.com'],
       subject: `New contact form submission from ${name}`,
       html: `

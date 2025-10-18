@@ -389,13 +389,19 @@ export default function Home() {
               className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#3a3a3a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-center items-center justify-center"
             >
               <div className="flex items-center justify-center">
-                <span className="text-sm md:text-base mr-2">Send me a message</span>
+                <span className="text-sm md:text-base mr-2">Send me an email</span>
               </div>
             </a>
           </div>
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-gray-400 text-xs md:text-sm space-y-4 sm:space-y-0">
             <div>rogix, 2025</div>
             <div className="flex space-x-4">
+              <a
+                href="/contact"
+                className="hover:text-white transition-colors"
+              >
+                email
+              </a>
               <a
                 href="https://www.linkedin.com/in/rogmxp/"
                 target="_blank"
@@ -417,11 +423,11 @@ export default function Home() {
                 blog
               </a>
               <a
-                href="https://x.com/_rogmx"
+                href="https://x.com/r0g1x"
                 target="_blank"
                 className="hover:text-white transition-colors"
               >
-                X
+                twitter
               </a>
               <a
                 href="https://bsky.app/profile/rogix.bsky.social"
