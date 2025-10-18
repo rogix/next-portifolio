@@ -379,12 +379,6 @@ export default function Home() {
               Linkedin
             </a>
             <a
-              href="https://github.com/rogix"
-              className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#2a2a2a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-center"
-            >
-              Github
-            </a>
-            <a
               href="/contact"
               className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#3a3a3a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-center items-center justify-center"
             >
