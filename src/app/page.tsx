@@ -86,7 +86,9 @@ export default function Home() {
               className="md:w-20 md:h-20 rounded-full object-cover aspect-square"
             />
             <div className="text-gray-400 text-xs md:text-sm leading-relaxed pt-1 max-w-md">
-              &ldquo;There&apos;s a tremendous amount of craftsmanship between a great idea and a great product… and it&apos;s that process that is the magic.&rdquo;
+              &ldquo;There&apos;s a tremendous amount of craftsmanship between a
+              great idea and a great product… and it&apos;s that process that is
+              the magic.&rdquo;
               <br />
               Steve Jobs
             </div>
@@ -378,22 +380,11 @@ export default function Home() {
             >
               Linkedin
             </a>
-            <a
-              href="/contact"
-              className="flex-1 px-8 md:px-20 py-6 md:py-10 bg-[#3a3a3a] text-white hover:text-amber-100 transition-colors w-full text-sm md:text-center items-center justify-center"
-            >
-              <div className="flex items-center justify-center">
-                <span className="text-sm md:text-base mr-2">Send me an email</span>
-              </div>
-            </a>
           </div>
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-gray-400 text-xs md:text-sm space-y-4 sm:space-y-0">
             <div>rogix, 2025</div>
             <div className="flex space-x-4">
-              <a
-                href="/contact"
-                className="hover:text-white transition-colors"
-              >
+              <a href="/contact" className="hover:text-white transition-colors">
                 email
               </a>
               <a
